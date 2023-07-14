@@ -1,0 +1,17 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: code-service
+  discovery:
+    locator:
+      enabled: true
+  jpa:
+    show-sql: true
+    properties.hibernate.format_sql: true
+    hibernate.ddl-auto: update
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    password: r@ajneeshd@13#
+    url: jdbc:sqlserver://10.1.1.146;databaseName=MAWANI;encrypt=true;trustServerCertificate=true;?serverTimezone=UTC
+    username: rajneeshd
